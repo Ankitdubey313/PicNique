@@ -9,19 +9,19 @@
 
             <div class="mb-3" >
                 <label class="form-label" for="title"> title</label>
-                <input class="form-control" type="text" id="title" name="campground[title] " value="<%=campground.title  %>" required>
+                <input class="form-control" type="text" id="title" name="campground[title]" value="<%=campground.title%>" required>
     
             </div>
     
             <div  class="mb-3">
                 <label  class="form-label"for="title"> location</label>
-                <input  class="form-control" type="text" id="location" name="campground[location]"  value="<%=campground.location %>"required>
+                <input  class="form-control" type="text" id="location" name="campground[location]"  value="<%=campground.location%>"required>
     
             </div>
            
             <div class="mb-3" >
                 <label class="form-label" for="description">description</label>
-                <textarea class="form-control" type="text" id="description" name="campground[description]" required> <%= campground.description%></textarea>
+                <textarea class="form-control" type="text" id="description" name="campground[description]" required> <%=campground.description%></textarea>
                
     
             </div>
@@ -34,7 +34,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">&#8377; </span>
                     </div>
-                    <input id="price"type="text" class="form-control" placeholder="0.00" aria-label="price" name="campground[price]"aria-describedby="pricelabel" required  value="<%=campground.price  %>">
+                    <input id="price"type="text" class="form-control" placeholder="0.00" aria-label="price" name="campground[price]"aria-describedby="pricelabel" required  value="<%=campground.price%>">
                 </div>
     
 

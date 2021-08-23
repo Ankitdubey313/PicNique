@@ -155,7 +155,9 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).send(message);
 })// the thrown error is handled here from whatever route it is
 
-// set up the error boilerplate 443
-app.listen(3000, () => {
-    console.log("on port 3000");
+const port = process.env.PORT || 3000;
+
+
+app.listen(port, () => {
+    console.log(`on port ${port}`);
 }) //default port
